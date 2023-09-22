@@ -1,0 +1,165 @@
+$blackColor : #151515;
+$seaGreen: #4ee1a0;
+$grey: #242424;
+$lightGrey: #d9d9d9;
+$white: #fff;
+
+
+
+
+body {
+    background-color: $blackColor;
+    font-family: 'Space Grotesk', sans-serif;
+
+  }
+
+  .green-underline{
+      border-bottom: .4rem solid $seaGreen;
+  }
+
+.padding-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .width-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+a{
+    color: $white;
+}
+
+
+
+.top{
+    .width-container{
+        
+        .header{
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            .logo{
+                height: 4rem;
+                img{
+                    height: 4rem;
+                    width: auto;
+                }
+            }
+            .links{
+                a{
+                    margin-left: .5rem;
+                    margin-right: .5rem;
+                }
+            }
+
+
+        }
+        .jumbotron-profile{
+            display: flex;
+            flex-direction: column-reverse;
+            color: $white;
+            .description{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+           
+                line-height: 1.5;
+                h1{
+                    margin-bottom: 1.5rem;
+                }
+            }
+            
+            .profile{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 75%;
+                    height: auto;
+                }
+            }
+            
+                     
+        }
+
+
+    }
+}
+
+
+
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .top{
+        .width-container{
+            margin-bottom: 3rem;
+            border-bottom: solid 2px $white;
+            .header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .links{
+                    a{
+                        margin-left: 1rem;
+                        margin-right: 0rem;
+                    }
+                }
+                 }
+                 .jumbotron-profile{
+                    flex-direction: row;
+
+                    .description{
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                   
+                        line-height: 1.5;
+                        h1{
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    .profile{
+                        width: 50%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                             
+                }
+
+           
+        }
+    }
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
